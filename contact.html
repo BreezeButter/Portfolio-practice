@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
-  
-  </head>
-  <body class="body">
+
+</head>
+
+<body class="body">
     <div class="hello-container">
-      <div>
-        <h3 style="border: 1px solid #00cc11; border-style: dotted">
-          &nbsp; Hello Every One 👋 &nbsp;
-        </h3>
-      </div>
+        <div>
+            <h3 style="border: 1px solid #00cc11; border-style: dotted">
+                &nbsp; Hello Every One 👋 &nbsp;
+            </h3>
+        </div>
     </div>
     <div class="nav-container">
-      <ul>
-        <li><a href="./home.html" >&nbsp;Home&nbsp;</a></li>
-        <li><a href="./education.html">&nbsp;Education&nbsp;</a></li>
-        <li><a href="./work.html">&nbsp;Work&nbsp;</a></li>
-        <li><a href="./contact.html" style="background-color: #000000; color:aliceblue">&nbsp;Contact&nbsp;</a></li>
-      </ul>
+        <ul>
+            <li><a href="./index.html">&nbsp;Home&nbsp;</a></li>
+            <li><a href="./education.html">&nbsp;Education&nbsp;</a></li>
+            <li><a href="./work.html">&nbsp;Work&nbsp;</a></li>
+            <li><a href="./contact.html" style="background-color: #000000; color:aliceblue">&nbsp;Contact&nbsp;</a></li>
+        </ul>
     </div>
     <br>
     <div>
-      <h1>&nbsp;&nbsp;&nbsp;Kanyapassawee&nbsp;Buddhachat</h1>
-      <hr style="border-style: dashed; border-color:#00cc11">
+        <h1>&nbsp;&nbsp;&nbsp;Kanyapassawee&nbsp;Buddhachat</h1>
+        <hr style="border-style: dashed; border-color:#00cc11">
     </div>
-    
-</html> 
+    <div>
+
+        <form action="/action_page.php">
+            <label for="fname">Name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="email">E-mail:</label><br>
+            <input type="text" id="email" name="email" value=""><br><br>
+            <label for="gender">Gender:</label><br>
+            <input style="width: 80px; margin-left: 10px;" list="gender" placeholder="Gender" />
+            <datalist id="gender">
+              <option value="Male"></option>
+              <option value="Female"></option>
+              <option value="Unidetifiend"></option>
+            </datalist><br>
+            <label for="lname">Message:</label><br>
+            <input type="text" id="lname" name="lname" style="width: 200px; height: 100px;;" value=""><br><br>
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+
+</html>
